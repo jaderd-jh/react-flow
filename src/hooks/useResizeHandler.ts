@@ -1,4 +1,5 @@
 import { useEffect, MutableRefObject } from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 
 import { useStoreApi } from '../store';
 import { getDimensions } from '../utils';
