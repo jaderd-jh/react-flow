@@ -28,6 +28,9 @@
     "type": "git",
     "url": "https://github.com/wbkd/react-flow.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rimraf dist && rollup -c --environment NODE_ENV:production && npm run css",
     "build:test": "rimraf dist && rollup -c --environment NODE_ENV:test && npm run css",
@@ -43,7 +46,8 @@
     "test:all": "npm run test:chrome && npm run test:firefox",
     "cypress": "npm run dev:wait cy:open",
     "cy:open": "cypress open",
-    "release": "npm run test && release-it",
+    "prepublishOnly": "rimraf dist && npm run build",
+    "release": "npm publish -r --no-git-checks",
     "release:notest": "release-it",
     "release:next": "release-it --preRelease=next --no-git",
     "css": "postcss src/*.css --dir dist"
