@@ -1,4 +1,5 @@
 import { CSSProperties, MouseEvent as ReactMouseEvent } from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 
 import { SnapGrid } from './general';
 import { XYPosition, Position, CoordinateExtent } from './utils';

@@ -1,5 +1,6 @@
 import React, { memo, useMemo, ComponentType, MouseEvent, useEffect, useRef } from 'react';
 import shallow from 'zustand/shallow';
+import ResizeObserver from 'resize-observer-polyfill';
 
 import useVisibleNodes from '../../hooks/useVisibleNodes';
 import { useStore } from '../../store';
