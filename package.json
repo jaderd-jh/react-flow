@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/jaderd-jh/react-flow.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c --environment NODE_ENV:production && postcss src/*.css --dir dist",
     "start": "rollup -w -c",
@@ -27,7 +30,8 @@
     "test:all": "npm run test:chrome && npm run test:firefox",
     "cypress": "npm run dev:wait cy:open",
     "cy:open": "cypress open",
-    "release": "npm run test && release-it",
+    "prepublishOnly": "rimraf dist && npm run build",
+    "release": "npm publish -r --no-git-checks",
     "release:notest": "release-it",
     "release:next": "release-it --preRelease=next --no-git"
   },
