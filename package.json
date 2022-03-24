@@ -31,7 +31,7 @@
     "cypress": "npm run dev:wait cy:open",
     "cy:open": "cypress open",
     "prepublishOnly": "rimraf dist && npm run build",
-    "release": "npm publish -r --no-git-checks",
+    "release": "npm publish --no-git-checks",
     "release:notest": "release-it",
     "release:next": "release-it --preRelease=next --no-git"
   },
