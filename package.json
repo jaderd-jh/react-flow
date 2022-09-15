@@ -1,6 +1,6 @@
 {
   "name": "@jhqn/react-flow-renderer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "node": ">=14"
   },
@@ -54,13 +54,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",
+    "@types/d3": "^7.4.0",
+    "@types/resize-observer-browser": "^0.1.7",
     "classcat": "^5.0.3",
     "d3-drag": "^3.0.0",
     "d3-selection": "^3.0.0",
     "d3-zoom": "^3.0.0",
-    "zustand": "^3.7.2",
-    "@types/d3": "^7.4.0",
-    "@types/resize-observer-browser": "^0.1.7"
+    "zustand": "^3.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
@@ -72,6 +72,8 @@
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-replace": "^4.0.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
     "babel-preset-react-app": "^10.0.1",
     "cross-env": "^7.0.3",
@@ -83,6 +85,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "release-it": "^15.1.2",
+    "resize-observer-polyfill": "^1.5.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.77.0",
     "rollup-plugin-livereload": "^2.0.5",
@@ -92,9 +95,7 @@
     "rollup-plugin-typescript2": "^0.32.1",
     "rollup-plugin-visualizer": "^5.7.1",
     "start-server-and-test": "^1.14.0",
-    "typescript": "^4.7.4",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6"
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "react": "16 || 17 || 18",
